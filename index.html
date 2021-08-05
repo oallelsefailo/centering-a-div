@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="How to center a div">
+    <meta name="keywords" content="HTML, CSS, JavaScript, div, center a div, web dev, center, how to, diy, center divs, div side by side, horizontal div, vertical div, div inside a div, positioning a div, set div, position a div">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <title>How To Center a div</title>
+</head>
+<body>
+    <section class="header">
+        <h1>How to center a div</h1>
+        <p>The most googled search that we always forget. How to center a f**king div?!
+        </p>
+    </section>
+    <section class="mainInfo">
+        <p>No fancy things here, just click a method below and go.</p>
+        <ul>
+            <li><a href="#horizontally" class="nav">horizontally</a></li>
+            <li><a href="#vertically" class="nav">veritcally</a></li>
+            <li><a href="#hAV" class="nav">horizontally AND veritcally</a></li>
+            <li><a href="#inception" class="nav">inception div (div within a div)</a></li>
+        </ul>
+    </section>
+    <section>
+        <div class="container">
+            <h2><a name="horizontally">Horizontally</a></h2>
+            <p>Your HTML:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                    <span class="newCode">
+                        <span class="append"><</span><span class="docD">div</span><span class="append">></span>
+                        <span class="attr">class</span>=<span class="string">"horizontally"</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                        <span class="append"><</span><span class="docD">p</span><span class="append">></span>A lovely horizontally positioned div just for you.<span class="append">&lt;/</span><span class="docD">p</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                        <span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
+                    </span>
+                    <br>
+                </code>
+            </pre>
+            <p>Your CSS:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                    <span class="newCode">
+                        <span class="string">.horizontally</span> {
+                        <br>
+                        <span class="attr">margin</span>: <span class="string">auto</span>;
+                        <br><span class="attr">border</span>: <span class="number">2px </span><span class="string">solid</span> <span class="number">#000000</span>;
+                        <br>
+                        <span class="attr">width</span>: <span class="number">50%</span>;
+                        <br>
+                        }
+                    </span>
+                </code>
+            </pre>
+            <h3>Result:</h3>
+            <div class="horizontally">
+                <p>A lovely horizontally positioned div just for you.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2><a name="vertically">Vertically</a></h2>
+            <p>Your HTML:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                    <br>
+                    <span class="newCode">
+                    <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"veritcally"</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                    <span class="append">&lt;</span><span class="docD">p</span><span class="append">></span>A pretty vertically positioned div just for you.<span class="append">&lt;/</span><span class="docD">p</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                    <span class="append"><span class="append">&lt;/</span></span><span class="docD">div</span><span class="append">></span>
+                    </span>
+                    <br>
+                </code>
+            </pre>
+            <p>Your CSS:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                <br>
+                <span class="newCode">
+                    <span class="string">.vertically</span> {
+                    <br>
+                    <span class="attr">position</span>: <span class="string">relative</span>;
+                    <br>
+                    <span class="attr">top</span>: <span class="number">50%</span>;
+                    <br>
+                    <span class="attr">transform</span>: <span class="string">translate</span>(<span class="number">0</span>, -<span class="number">50%</span>);
+                    <br>
+                    <span class="attr">border</span>: <span class="number">2px</span> <span class="string">solid</span> <span class="number">#000000</span>;
+                    <br>
+                    }
+                </span>
+                </code>
+            </pre>
+            <h3>Result:</h3>
+            <div class="vertically">
+                <p>A pretty vertically positioned div just for you.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2><a name="hAV">Horizontally &amp; Vertically</a></h2>
+            <p>Your HTML:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                    <br>
+                    <span class="newCode">
+                        <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"horizontally-vertically"</span><span class="append"><span class="append">></span></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                        <span class="append">&lt;</span><span class="docD">p</span><span class="append">></span>A beautiful horizontally AND vertically positioned div just for you.<span class="append">&lt;/</span><span class="docD">p</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode"><span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
+                    </span>
+                    <br>
+                </code>
+            </pre>
+            <p>Your CSS:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                <br>
+                <span class="newCode">
+                    <span class="string">.horizontally-vertically</span>{
+                    <br>
+                    <span class="attr">position</span>: <span class="string">relative</span>;
+                    <br>
+                    <span class="attr">top</span>: <span class="number">50%</span>;
+                    <br>
+                    <span class="attr">left</span>:<span class="number"> 50%</span>;
+                    <br>
+                    <span class="attr">transform</span>: <span class="string">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);
+                    <br>
+                    <span class="attr">border</span>: <span class="number">2px </span> <span class="string">solid</span> <span class="number">#000000</span>;
+                    <br>
+                    }
+                </span>
+                </code>
+            </pre>
+            <h3>Result:</h3>
+            <div class="horizontally-vertically">
+                <p>A beautiful horizontally AND vertically positioned div just for you.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2><a name="inception">Div within a Div</a></h2>
+            <p>Your HTML:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                    <br>
+                    <span class="newCode">
+                        <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"parent-div"</span><span class="append"><span class="append">></span></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
+                        <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"child-div"</span><span class="append"><span class="append">></span></span><span class="append">&lt;</span><span class="docD">p</span><span class="append">></span>Inception div - queue inception music.<span class="append">&lt;/</span><span class="docD">p</span><span class="append">></span><span class="newCode"><span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode"><span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
+                    </span>
+                    <br>
+                </code>
+            </pre>
+            <p>Your CSS:</p>
+            <pre class="codeEx">
+                <code class="codeColors">
+                <br>
+                <span class="newCode">
+                    <span class="string">.parent-div</span>{
+                    <br>
+                    <span class="attr">background</span>: <span class="number">#808080</span>;
+                    <br>
+                    <span class="attr">justify-content</span>: <span class="string">center</span>;
+                    <br>
+                    <span class="attr">display</span>: <span class="string">flex</span>;
+                    <br>
+                    <span class="attr">height</span>: <span class="number">250px</span>;
+                    <br>
+                    <span class="attr">width</span>:<span class="number"> 250px</span>;
+                    <br>
+                    }
+                    <br>
+                    <br>
+                    <span class="string">.child-div</span>{
+                    <br>
+                    <span class="attr">background</span>: <span class="number">#D3D3D3</span>;
+                    <br>
+                    <span class="attr">align-self</span>: <span class="string">center</span>;
+                    <br>
+                    <span class="attr">padding</span>: <span class="number">1rem</span>;
+                    <br>
+                    }
+                </span>
+                </code>
+            </pre>
+            <h3>Result:</h3>
+            <div class="parent-div">
+                <div class="child-div"><p>Inception div - queue inception music.</p></div>
+            </div>
+            <br>
+            <p>Source: Multiple Stackoverflow threads..</p>
+        </div>
+    </section>
+</body>
+</html>

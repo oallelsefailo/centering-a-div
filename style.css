@@ -33,6 +33,14 @@ h1 {
     text-align: center;
 }
 
+.mainInfo p {
+    padding: 5px;
+}
+
+.mainInfo > ul:nth-child(2) {
+    padding-left: 0px;
+}
+
 li {
     display: inline;
     margin-left: 25px;

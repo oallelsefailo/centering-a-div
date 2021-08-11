@@ -135,11 +135,18 @@
                 <code class="codeColors">
                     <br>
                     <span class="newCode">
+                        <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"hVParent"</span><span class="append"><span class="append">></span></span>
+                    </span>
+                    <br>
+                    <span class="newCode">
                         <span class="append">&lt;</span><span class="docD">div</span><span class="attr"> class</span>=<span class="string">"horizontally-vertically"</span><span class="append"><span class="append">></span></span>
                     </span>
                     <br>
                     <span class="newCode">
                         <span class="append">&lt;</span><span class="docD">p</span><span class="append">></span>A beautiful horizontally AND vertically positioned div just for you.<span class="append">&lt;/</span><span class="docD">p</span><span class="append">></span>
+                    </span>
+                    <br>
+                    <span class="newCode"><span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
                     </span>
                     <br>
                     <span class="newCode"><span class="append">&lt;/</span><span class="docD">div</span><span class="append">></span>
@@ -152,9 +159,16 @@
                 <code class="codeColors">
                 <br>
                 <span class="newCode">
-                    <span class="string">.horizontally-vertically</span>{
+                    <span class="string">.hVParent</span> {
                     <br>
                     <span class="attr">position</span>: <span class="string">relative</span>;
+                    <br>
+                    }
+                    <br><br>
+                <span class="newCode">
+                    <span class="string">.horizontally-vertically</span> {
+                    <br>
+                    <span class="attr">position</span>: <span class="string">absolute</span>;
                     <br>
                     <span class="attr">top</span>: <span class="number">50%</span>;
                     <br>
@@ -166,11 +180,14 @@
                     <br>
                     }
                 </span>
+                </span>
                 </code>
             </pre>
             <h3>Result:</h3>
-            <div class="horizontally-vertically">
-                <p>A beautiful horizontally AND vertically positioned div just for you.</p>
+            <div class="hVParent">
+                <div class="horizontally-vertically">
+                    <p>A beautiful horizontally AND vertically positioned div just for you.</p>
+                </div>
             </div>
         </div>
     </section>

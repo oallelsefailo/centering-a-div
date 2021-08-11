@@ -155,9 +155,12 @@ section {
     border: 2px solid #000000;
 }
 
-.horizontally-vertically {
-    display: inline-block;
+.hVParent {
     position: relative;
+}
+
+.horizontally-vertically {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

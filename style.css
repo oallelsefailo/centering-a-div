@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
 body {
     font-family: var(--ff-accent);
     font-weight: 400;
@@ -68,13 +75,6 @@ a {
 
 .nav:hover::before {
     transform: scale(1, 1);
-}
-
-body,
-h1,
-h2,
-p {
-    margin: 0;
 }
 
 section {

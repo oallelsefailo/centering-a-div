@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
@@ -40,39 +41,31 @@
 
       gtag("config", "G-290DHWENR1");
     </script>
-    <title>Tic Tac Toe</title>
+    <title>Music Lyrics</title>
   </head>
   <body>
     <section class="header">
-      <h1>Tic Tac Toe</h1>
-      <p>Play against a friend :)</p>
+      <h1>Music Lyrics</h1>
+      <p>A Thousand Years</p>
     </section>
     <section class="mainInfo">
       <p>Navigation</p>
       <ul>
         <li><a href="index.html" class="nav">Center a Div</a></li>
+        <li><a href="tictactoe.html" class="nav">Tic Tac Toe</a></li>
         <li><a href="clickme.html" class="nav">Can't Click Me</a></li>
-        <li><a href="music.html" class="nav">Music Lyrics</a></li>
       </ul>
     </section>
-
-    <div class="game-board">
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-      </div>
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-      </div>
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+    <div class="container">
+      <div><span class="musicBox">♬</span></div>
+      <div class="verses">
+        <span class="fakeVerse"></span>
+        <span class="verseOne">I Have Died Everyday Waiting For You</span>
+        <span class="verseTwo">Darling Don't Be Afraid</span>
+        <span class="verseThree">I Have Loved You For A Thousand Years</span>
+        <span class="verseFour">I'll Love You For A Thousand More</span>
       </div>
     </div>
-    <script src="tictactoe.js"></script>
+    <script src="music.js"></script>
   </body>
 </html>

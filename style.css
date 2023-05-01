@@ -281,3 +281,82 @@ section {
   font-size: 48px;
   color: red;
 }
+
+/* Can't click me button */
+.clickMe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10%;
+}
+
+.clickMe:hover {
+  cursor: pointer;
+}
+
+.clickMebutton:active {
+  pointer-events: none;
+}
+
+h3 {
+  display: table;
+  margin: 0 auto;
+}
+
+/*Music Lyrics*/
+
+.container {
+  position: relative;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicBox {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.musicBox:hover {
+  background-color: #3e8e41;
+}
+
+.musicBox::before {
+  content: "\266B";
+  display: inline-block;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.verses {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  top: 70px;
+}
+
+.verses > span {
+  display: none;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #555;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
